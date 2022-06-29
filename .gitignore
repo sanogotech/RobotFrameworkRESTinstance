@@ -16,7 +16,7 @@ __pycache__/
 
 # virtualenv(s)
 .venv/
-
+venv/
 # setuptools
 build/
 dist/

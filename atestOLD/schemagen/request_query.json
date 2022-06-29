@@ -1,0 +1,232 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "default": true,
+    "description": "Atest.Schemagen: Method with query parameters",
+    "examples": [],
+    "properties": {
+        "request": {
+            "properties": {
+                "body": {
+                    "type": "null"
+                },
+                "query": {
+                    "properties": {
+                        "_limit": {
+                            "enum": [
+                                "5"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "_limit"
+                    ],
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "response": {
+            "properties": {
+                "body": {
+                    "items": [
+                        {
+                            "properties": {
+                                "address": {
+                                    "properties": {
+                                        "city": {
+                                            "type": "string"
+                                        },
+                                        "geo": {
+                                            "properties": {
+                                                "lat": {
+                                                    "type": "string"
+                                                },
+                                                "lng": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "lat",
+                                                "lng"
+                                            ],
+                                            "type": "object"
+                                        },
+                                        "street": {
+                                            "type": "string"
+                                        },
+                                        "suite": {
+                                            "type": "string"
+                                        },
+                                        "zipcode": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "city",
+                                        "geo",
+                                        "street",
+                                        "suite",
+                                        "zipcode"
+                                    ],
+                                    "type": "object"
+                                },
+                                "company": {
+                                    "properties": {
+                                        "bs": {
+                                            "type": "string"
+                                        },
+                                        "catchPhrase": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "bs",
+                                        "catchPhrase",
+                                        "name"
+                                    ],
+                                    "type": "object"
+                                },
+                                "email": {
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "enum": [
+                                        "Leanne Graham"
+                                    ],
+                                    "minLength": 3,
+                                    "type": "string"
+                                },
+                                "phone": {
+                                    "type": "string"
+                                },
+                                "username": {
+                                    "type": "string"
+                                },
+                                "website": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "address",
+                                "company",
+                                "email",
+                                "id",
+                                "name",
+                                "phone",
+                                "username",
+                                "website"
+                            ],
+                            "type": "object"
+                        },
+                        {
+                            "properties": {
+                                "address": {
+                                    "properties": {
+                                        "city": {
+                                            "type": "string"
+                                        },
+                                        "geo": {
+                                            "properties": {
+                                                "lat": {
+                                                    "type": "string"
+                                                },
+                                                "lng": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "lat",
+                                                "lng"
+                                            ],
+                                            "type": "object"
+                                        },
+                                        "street": {
+                                            "type": "string"
+                                        },
+                                        "suite": {
+                                            "type": "string"
+                                        },
+                                        "zipcode": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "city",
+                                        "geo",
+                                        "street",
+                                        "suite",
+                                        "zipcode"
+                                    ],
+                                    "type": "object"
+                                },
+                                "company": {
+                                    "properties": {
+                                        "bs": {
+                                            "type": "string"
+                                        },
+                                        "catchPhrase": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "bs",
+                                        "catchPhrase",
+                                        "name"
+                                    ],
+                                    "type": "object"
+                                },
+                                "email": {
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "enum": [
+                                        "Ervin Howell"
+                                    ],
+                                    "pattern": "[A-Za-z]+",
+                                    "type": "string"
+                                },
+                                "phone": {
+                                    "type": "string"
+                                },
+                                "username": {
+                                    "type": "string"
+                                },
+                                "website": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "address",
+                                "company",
+                                "email",
+                                "id",
+                                "name",
+                                "phone",
+                                "username",
+                                "website"
+                            ],
+                            "type": "object"
+                        }
+                    ],
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "title": "GET http://localhost:8273/users",
+    "type": "object"
+}

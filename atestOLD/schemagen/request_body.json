@@ -1,0 +1,61 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "default": true,
+    "description": "Atest.Schemagen: Method with body parameters",
+    "examples": [],
+    "properties": {
+        "request": {
+            "properties": {
+                "body": {
+                    "properties": {
+                        "id": {
+                            "enum": [
+                                11
+                            ],
+                            "type": "integer"
+                        },
+                        "name": {
+                            "enum": [
+                                "Gil Alexander"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name"
+                    ],
+                    "type": "object"
+                },
+                "query": {
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "response": {
+            "properties": {
+                "body": {
+                    "properties": {
+                        "id": {
+                            "default": 11,
+                            "type": "integer"
+                        },
+                        "name": {
+                            "default": "Gil Alexander",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "name"
+                    ],
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "title": "POST http://localhost:8273/users",
+    "type": "object"
+}

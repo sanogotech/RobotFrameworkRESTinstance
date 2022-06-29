@@ -1,0 +1,110 @@
+{
+    "properties": {
+        "address": {
+            "properties": {
+                "city": {
+                    "default": "Gwenborough",
+                    "type": "string"
+                },
+                "geo": {
+                    "properties": {
+                        "lat": {
+                            "default": "-37.3159",
+                            "type": "string"
+                        },
+                        "lng": {
+                            "default": "81.1496",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "lat",
+                        "lng"
+                    ],
+                    "type": "object"
+                },
+                "street": {
+                    "default": "Kulas Light",
+                    "type": "string"
+                },
+                "suite": {
+                    "default": "Apt. 556",
+                    "type": "string"
+                },
+                "zipcode": {
+                    "default": "92998-3874",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "city",
+                "geo",
+                "street",
+                "suite",
+                "zipcode"
+            ],
+            "type": "object"
+        },
+        "company": {
+            "properties": {
+                "bs": {
+                    "default": "harness real-time e-markets",
+                    "type": "string"
+                },
+                "catchPhrase": {
+                    "default": "Multi-layered client-server neural-net",
+                    "type": "string"
+                },
+                "name": {
+                    "default": "Romaguera-Crona",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "bs",
+                "catchPhrase",
+                "name"
+            ],
+            "type": "object"
+        },
+        "email": {
+            "default": "Sincere@april.biz",
+            "examples": [
+                "Sincere@april.biz"
+            ],
+            "format": "email",
+            "type": "string"
+        },
+        "id": {
+            "default": 1,
+            "type": "integer"
+        },
+        "name": {
+            "default": "Leanne Graham",
+            "type": "string"
+        },
+        "phone": {
+            "default": "1-770-736-8031 x56442",
+            "type": "string"
+        },
+        "username": {
+            "default": "Bret",
+            "type": "string"
+        },
+        "website": {
+            "default": "hildegard.org",
+            "type": "string"
+        }
+    },
+    "required": [
+        "address",
+        "company",
+        "email",
+        "id",
+        "name",
+        "phone",
+        "username",
+        "website"
+    ],
+    "type": "object"
+}
