@@ -3,6 +3,11 @@
 [Robot Framework](http://robotframework.org) library for RESTful JSON APIs
 
 [Keyword Documentation](https://asyrjasalo.github.io/RESTinstance)
+## Install RobotFramework
+``` 
+pip install robotframework
+robot --version
+``` 
 
 ## Advantages
 
